@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NavMenu from './NavMenu';
 import ItemDetail from './ItemDetail';
 import AdminPanel from './AdminPanel';
-import './App.css'; // Ensure you import your CSS file for styling
+import './app.css';
 
 function App() {
   return (
