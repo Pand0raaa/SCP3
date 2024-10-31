@@ -1,0 +1,71 @@
+/* AdminPanel.css */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: white; /* Set default font color to white */
+}
+
+/* Admin Panel */
+.add-record-container {
+    margin-bottom: 20px; /* Space below the Add Record section */
+    background-color: rgba(240, 240, 240, 0.5); /* Semi-transparent grey background */
+    padding: 20px; /* Padding inside the container */
+    border-radius: 8px; /* Rounded corners */
+    max-width: 400px; /* Set a maximum width for the container */
+    margin: 20px auto; /* Center the container horizontally */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Optional: Add some shadow for depth */
+}
+
+/* Heading for Add New Record */
+.add-record-container h3 {
+    font-size: 1.8rem; /* Increase font size for the heading */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+/* Input Styles */
+.add-record-input {
+    display: block; /* Ensure each input is on its own line */
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px; /* Padding for inputs */
+    margin-bottom: 10px; /* Space between inputs */
+    font-size: 1.2rem; /* Increase font size for better visibility */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners */
+    color: black; /* Text color for input fields */
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background for inputs */
+}
+
+/* Grey Button Styles */
+.button {
+    padding: 10px 20px; /* Padding for buttons */
+    font-size: 1.2rem; /* Increase font size for buttons */
+    background-color: rgba(128, 128, 128, 0.8); /* Semi-transparent grey button color */
+    color: white; /* Text color for buttons */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Transition effect for hover */
+}
+
+.button:hover {
+    background-color: rgba(128, 128, 128, 1); /* Fully opaque grey on hover */
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    color: white; /* Set text color for list items */
+}
+
+li {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background for list items */
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Semi-transparent border for list items */
+    border-radius: 4px;
+}

@@ -1,0 +1,68 @@
+/* App.css */
+
+/* Set the background image for the whole body */
+body {
+    background-image: url('./assets/shttefan-B7XNN9uNAh8-unsplash.jpg'); /* Path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+    min-height: 100vh; /* Ensure it covers the full height */
+    margin: 0; /* Remove default margin */
+}
+
+/* Create a separate container for the blurred background */
+.background-blur {
+    position: fixed; /* Keep the background fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(5px); /* Apply blur effect */
+    z-index: 0; /* Send it to the back */
+}
+
+/* Ensure the welcome-container appears above the blurred background */
+.welcome-container {
+    position: relative; /* Create a positioning context */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text */
+    padding: 20px;
+    color: white; /* Text color for better contrast */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    border-radius: 10px; /* Optional: rounded corners */
+    z-index: 1; /* Ensure it sits above the background */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 3rem; /* Increase font size */
+    color: #fff; /* White text for better readability */
+}
+
+p {
+    max-width: 800px; /* Limit paragraph width for better readability */
+    margin-bottom: 15px; /* Spacing between paragraphs */
+    line-height: 1.6; /* Improve line spacing */
+    color: #fff; /* White text for better readability */
+    font-size: 1.25rem; /* Increase paragraph font size */
+}
+
+/* Optional: Button styles */
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF; /* Bootstrap primary color */
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
